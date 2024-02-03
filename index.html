@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewort" content="width=device-width, initial-scale=1.0">
+    <title> Figma Website Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="data:image/png;base64,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" alt="">
+        <p class="navpara">Products <i class="fa-solid fa-caret-down"></i></p>
+        &nbsp;
+        &nbsp;
+        <p class="navpara">Enterprise <i class="fa-solid fa-caret-down"></i></p>
+        &nbsp;
+        &nbsp;
+        <p class="navpara">Pricing </i></p>
+        &nbsp;
+        &nbsp;
+        <p class="navpara">Resources <i class="fa-solid fa-caret-down"></i></p>
+        &nbsp;
+        &nbsp;
+        <p class="navpara">Community <i class="fa-solid fa-caret-down"></i></p>
+        &nbsp;
+        &nbsp;
+        <p class="navpara">Contact Sales</p>
+        &nbsp;
+        &nbsp;
+        <p class="navpara">Log in </p>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
+        <button class="navbutton">Get Started For Free</button>
+    </nav>
+
+    <h1 class="firsth1">How you <span class="span1"> <span class="design">design</span>  </span>, <span class="span1">align</span>  , and <span class="span1"> build </span>  matters. Do it together with Figma.</h1>
+    <br/><br />
+    <button class="button2"> Get Started </button>
+
+    <br /><br /><br /><br />
+
+    <img class="image1" src="images/Screenshot (5).png" alt="">
+
+    <br /><br /><br /><br /><br />
+
+    <h4 class="tbta"> Trusted By Teams At</h4>
+
+    <br />
+
+    <marquee behavior="sliding" direction="rtl">
+    <p class="companies"> Microsoft &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoom &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Github &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Slack &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; airbnb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Asana &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     dribble &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; one medical &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rokuten&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Atlassian  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Braintree &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The New York Times &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     coinbase &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Microsoft &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoom &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Github &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Slack &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; airbnb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Asana &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     dribble &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; one medical &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rokuten&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Atlassian  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Braintree &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The New York Times &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     coinbase &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Microsoft &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoom &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Github &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Slack &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; airbnb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Asana &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     dribble &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; one medical &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rokuten&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Atlassian  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Braintree &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The New York Times &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     coinbase &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Microsoft &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Zoom &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Github &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Slack &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; airbnb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Asana &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     dribble &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; one medical &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rokuten&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     Atlassian  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Braintree &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The New York Times &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     coinbase
+    </p>
+    </marquee>
+
+
+    <br /><br /><br /><br /><br />
+
+    <div class="maindiv">
+        
+        <div class="box1">
+
+        <h4 class="pd1">Design</h4>
+
+        <h1> Co-operative in one space</h1>
+        <br />
+        <p class="db1b">Work together in real time and empower designers to create in new ways. Keep workflows efficient with tools that give every team visibility throughout the process.</p>
+        <button class="buttondiv1"> Explore Design</button>
+        <img class="divbox1img" src="images/Screenshot (6).png" alt="">
+      
+    </div>  
+
+
+    <div class="box2">
+
+        <h4 class="pd2">Prototype</h4>
+
+        <h1>Make designs feel real</h1>
+        <br />
+        <p class="db2b">Create realistic prototypes that allow for quick iteration on flows and states. Test the full, interactive experience to get better feedback, sooner.</p>
+        <button class="buttondiv2"> Explore prostotype</button>
+        <img class="divbox2img" src="images/Screenshot (7).png" alt="">
+      
+    </div>  
+
+    <div class="box3">
+
+        <h4 class="pd3">Dev Mode <span class="new">NEW</span> </h4>
+
+        <h1> Bring design and dev closer</h1>
+        <p class="db3b">Introducing Dev Mode, a new space in Figma for developers. Bring clarity to designs and give developers the tools they need to translate them into code.</p>
+        <button class="buttondiv3"> Explore Dev Mode</button>
+        <img class="divbox3img" src="images/Screenshot (8).png" alt="">
+      
+    </div>  
+
+    <div class="box4">
+
+        <h4 class="pd4">Design systems</h4>
+
+        <h1>Scale design and development</h1>
+        <p class="db4b">Save time and keep things consistent with reusable assets in shared libraries. Standardize components and variables so that there’s more time for exploration, and less time doing busy work.</p>
+        <button class="buttondiv4"> Explore design systems</button>
+        <img class="divbox4img" src="images/Screenshot (9).png" alt="">
+      
+    </div>  
+
+    <div class="box5">
+
+        <h4 class="pd5">FigJam</h4>
+
+        <h1>Align your team</h1>
+        <p class="db5b">FigJam is an online whiteboard where everyone who builds products can collaborate. Use it to bring your team together in new ways, from kickoffs and stand ups to rituals and retros.</p>
+        <button class="buttondiv5"> Explore FigJam</button>
+        <img class="divbox5img" src="images/Screenshot (10).png" alt="">
+      
+    </div>  
+
+</div>
+
+<!-- <footer>
+    <div class="divfooter1">
+          <p> Start <span class="buildingfooter">building</span> with Figma</p>
+
+    <button class="footerbutton"> Get Strted For Free</button>
+</div>
+  
+</footer> -->
+
+<footer>
+    <div id="footer-container">
+        <div id="footer-text">
+            <p>Start <span style="color:blueviolet">designing</span> with Figma.</p>
+        </div>
+        <div id="footer-btn">
+            <h1>Get started for free</h1>
+        </div>
+    </div>
+    <div id="footer-lower">
+        <div id="figma" class="lower-text">
+            <h2>Figma</h2>
+            <ul>
+                <li><i class="fa-brands fa-x-twitter"></i> <span>X</span></li>
+                <li><i class="fa-brands fa-youtube"></i> <span>Youtube</span></li>
+                <li><i class="fa-brands fa-instagram"></i> <span>Instagram</span></li>
+                <li><i class="fa-brands fa-facebook"></i> <span>Facebook</span></li>
+            </ul>
+        </div>
+        <div id="use-cases" class="lower-text">
+            <h3>Use Cases</h3>
+            <ul>
+                <li>UI design</li>
+                <li>UX design</li>
+                <li>Wireframing</li>
+                <li>Diagramming</li>
+                <li>Brainstorming</li>
+                <li>Online whiteboard</li>
+                <li>Team collaboration</li>
+                <li>Agile workflows</li>
+                <li>Strategic planning</li>
+                <li>Mind mapping</li>
+                <li>Concept mapping</li>
+                <li>Org charts</li>
+                <li>Online sticky notes</li>
+                <li>Templates</li>
+                <li>Remote design</li>
+                <li>Agencies</li>
+                <li>Figma for education</li>
+            </ul>
+
+        </div>
+        <div id="explore" class="lower-text">
+            <h3>Explore</h3>
+            <ul>
+                <li>Design features</li>
+                <li>Prototyping features</li>
+                <li>Design systems features</li>
+                <li>Development Features</li>
+                <li>Collaboration features</li>
+                <li>Design process</li>
+                <li>FigJam</li>
+                <li>What's new</li>
+                <li>Releases</li>
+                <li>Pricing</li>
+                <li>Enterprise</li>
+                <li>Organization</li>
+                <li>Professional</li>
+                <li>Customers</li>
+                <li>Security</li>
+                <li>Integrations</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div id="resources" class="lower-text">
+            <h3>Resources</h3>
+            <ul>
+                <li>Blog</li>
+                <li>Best practices</li>
+                <li>Color wheel</li>
+                <li>Support</li>
+                <li>Developers</li>
+                <li>Resource library</li>
+                <li>Reports & Insights</li>
+                <li>Webinars</li>
+                <li>Downloads</li>
+                <li>Careers</li>
+                <li>Our story</li>
+                <li>Affiliate program</li>
+                <li>Partners</li>
+                <li>Legal</li>
+                <li>Modern Slavery Statement</li>
+                <li>Climate Disclosure Statement</li>
+                <li>Status</li>
+            </ul>
+        </div>
+        <div id="compare" class="lower-text">
+            <h3>compare</h3>
+            <ul>
+                <li>Sketch</li>
+                <li>Adobe XD</li>
+                <li>InVision Studio</li>
+                <li>Framer</li>
+                <li>Design on Windows</li>
+                <li>Miro</li>
+            </ul>
+        </div>
+    </div>
+   
+</footer>
+
+
+   
+</body>
+</html>
